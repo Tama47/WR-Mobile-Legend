@@ -8,7 +8,7 @@ const resultText = document.querySelector("#resultText");
 // Functions
 function res() {
     const resultNum = rumus(tMatch.value, tWr.value, wrReq.value);
-    const text = `You need around <b>${resultNum}</b> win without lose to get a <b>${wrReq.value}%</b> win rate.`;
+    const text = `You need around <b>${resultNum}</b> consecutive win to get a win rate of <b>${wrReq.value}%</b>.`;
     resultText.innerHTML = text;
 }
 
